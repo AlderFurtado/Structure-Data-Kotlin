@@ -61,12 +61,12 @@ class Deque {
 
     fun peekFront(): Any{
         if(size == 0) throw Error("Deque is empty")
-        return array[0].toString()
+        return array[0] as Any
     }
 
     fun peekBack(): Any{
         if(size() == 0) throw Error("Deque is empty")
-        return array[size - 1].toString()
+        return array[size - 1] as Any
     }
 
     fun isEmpty() = size == 0
@@ -77,7 +77,7 @@ class Deque {
     override fun toString(): String{
         var arrayString = ""
         for (arr in array){
-            arrayString+= " $arr"
+            arrayString+= "$arr"
         }
         return arrayString
     }

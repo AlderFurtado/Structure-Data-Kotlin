@@ -32,7 +32,7 @@ class Stack {
      override fun toString(): String{
          var arrayString = ""
          for (arr in array){
-             arrayString+= " $arr"
+             arrayString+= "$arr"
          }
          return arrayString
      }
